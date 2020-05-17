@@ -1,7 +1,7 @@
 {-# LANGUAGE RecordWildCards #-}
 module Pure.Paginate where
 
-import Pure hiding (features,key)
+import Pure hiding (features,key,offset,count)
 
 import Control.Monad
 import Data.Typeable
