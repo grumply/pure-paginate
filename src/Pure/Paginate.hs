@@ -24,7 +24,7 @@ data Paginate key view response = Paginate
 
 instance (Eq key, Typeable key, Typeable view, Typeable response) => Pure (Paginate key view response) where
     view =
-        ComponentIO $ \self ->
+        Component $ \self ->
             let
                 upd = modify_ self . const
 
